@@ -1,5 +1,8 @@
-import storage from 'redux-persist/lib/storage';
+import { configureStore } from '@reduxjs/toolkit';
+import { contactsReducer } from './contacts/contactsSlice';
+import { authReducer } from './auth/authSlice';
 import {
+  persistStore,
   persistReducer,
   FLUSH,
   REHYDRATE,
@@ -7,14 +10,11 @@ import {
   PERSIST,
   PURGE,
   REGISTER,
-  persistStore,
 } from 'redux-persist';
-import { configureStore } from '@reduxjs/toolkit';
-import { contactsReducer } from './contacts/contactsSlice';
-import { filterReducer } from './contacts/filterSlice';
-import { authReducer } from './auth/authSlice';
 
-// Persisting token field from auth slice to localstorage
+import storage from 'redux-persist/lib/storage';
+import { filterReducer } from './contacts/filterSlice';
+
 const authPersistConfig = {
   key: 'auth',
   storage,
@@ -27,13 +27,13 @@ export const store = configureStore({
     contacts: contactsReducer,
     filter: filterReducer,
   },
+
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({
       serializableCheck: {
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
       },
     }),
-  devTools: process.env.NODE_ENV === 'development',
 });
 
 export const persistor = persistStore(store);

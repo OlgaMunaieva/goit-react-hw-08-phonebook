@@ -13,18 +13,24 @@ const ContactForm = () => {
 
   const handleOnSubmit = event => {
     event.preventDefault();
-    const form = event.target;
-    const {
-      elements: { name, number },
-    } = form;
+    const form = event.currentTarget;
+    // const {
+    //   elements: { name, number },
+    // } = form;
     const isExist = contacts.find(
-      contact => contact.name.toLowerCase() === name.value.toLowerCase()
+      contact =>
+        contact.name.toLowerCase() === form.elements.name.value.toLowerCase()
     );
     if (isExist) {
-      alert(`${name.value} is already in contacts`);
+      alert(`${form.elements.name.value} is already in contacts`);
       return;
     }
-    dispatch(addContact({ name: name.value, number: number.value }));
+    dispatch(
+      addContact({
+        name: form.elements.name.value,
+        number: form.elements.number.value,
+      })
+    );
     setName('');
     setNumber('');
     form.reset();

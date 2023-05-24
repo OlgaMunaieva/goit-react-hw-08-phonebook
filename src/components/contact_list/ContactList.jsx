@@ -8,6 +8,7 @@ import { selectVisibleContacts } from 'redux/contacts/selectors';
 const ContactList = () => {
   const contacts = useSelector(selectVisibleContacts);
   const dispatch = useDispatch();
+  console.log(contacts);
 
   useEffect(() => {
     dispatch(fetchContacts());
@@ -18,9 +19,9 @@ const ContactList = () => {
   return (
     <ContainerList>
       {contacts &&
-        contacts.map(({ id, name, phone }) => (
+        contacts.map(({ id, name, number }) => (
           <ContainerItem key={id}>
-            {name}: {phone}
+            {name}: {number}
             <AiOutlineCloseCircle onClick={() => onDelete(id)} />
           </ContainerItem>
         ))}
