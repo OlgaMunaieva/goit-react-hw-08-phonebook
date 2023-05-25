@@ -16,7 +16,7 @@ export default function PhonebookPage() {
   return (
     <>
       <Helmet>
-        <title>Your tasks</title>
+        <title>Phonebook</title>
       </Helmet>
       {/* <TaskEditor /> */}
       <div>{isLoading && 'Request in progress...'}</div>
