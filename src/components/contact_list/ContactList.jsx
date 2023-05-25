@@ -17,15 +17,18 @@ const ContactList = () => {
   const onDelete = id => dispatch(deleteContact(id));
 
   return (
-    <ContainerList>
-      {contacts &&
-        contacts.map(({ id, name, number }) => (
-          <ContainerItem key={id}>
-            {name}: {number}
-            <AiOutlineCloseCircle onClick={() => onDelete(id)} />
-          </ContainerItem>
-        ))}
-    </ContainerList>
+    <div>
+      <h2>Contacts</h2>
+      <ContainerList>
+        {contacts &&
+          contacts.map(({ id, name, number }) => (
+            <ContainerItem key={id}>
+              {name}: {number}
+              <AiOutlineCloseCircle onClick={() => onDelete(id)} />
+            </ContainerItem>
+          ))}
+      </ContainerList>
+    </div>
   );
 };
 

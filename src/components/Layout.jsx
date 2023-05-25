@@ -8,11 +8,12 @@ export const Layout = () => {
   return (
     <div
       style={{
-        position: 'fixed',
+        // position: 'fixed',
         paddingTop: '40px',
+        height: '100%',
         //   display: 'flex',
         //   maxWidth: 960,
-        //   margin: '0 auto',
+        margin: '0 auto',
         padding: '0 16px',
       }}
     >

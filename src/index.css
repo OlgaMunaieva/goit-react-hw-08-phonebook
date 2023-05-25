@@ -121,3 +121,27 @@ ul {
   margin-block-end: 0em;
   margin-block-start: 0em;
 }
+
+input {
+  background-color: transparent;
+  padding: 4px 6px;
+  border-radius: 5px;
+  /* Задаем прозрачный цвет фона */
+  border: 1px solid #000;
+  /* Задаем стиль и цвет рамки */
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+button {
+  background-color: transparent;
+  /* Задаем прозрачный цвет фона */
+  border: 1px solid #000;
+  /* Задаем стиль и цвет рамки */
+  color: #000;
+  /* Задаем цвет текста */
+  cursor: pointer;
+  border-radius: 5px;
+}

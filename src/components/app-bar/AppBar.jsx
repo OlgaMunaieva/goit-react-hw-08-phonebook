@@ -13,7 +13,7 @@ export const AppBar = () => {
         justifyContent: 'space-between',
         alignItems: 'center',
         marginBottom: '16px',
-        gap: '60px',
+        // gap: '60px',
         borderBottom: '1px solid #2a363b',
       }}
     >
