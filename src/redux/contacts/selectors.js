@@ -9,7 +9,6 @@ export const selectFilter = state => state.filter;
 export const selectVisibleContacts = createSelector(
   [selectContacts, selectFilter],
   (contacts, filter) => {
-    console.log(contacts, filter);
     if (!filter) {
       return contacts;
     }

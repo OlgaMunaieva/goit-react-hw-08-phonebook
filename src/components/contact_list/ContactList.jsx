@@ -8,7 +8,6 @@ import { selectVisibleContacts } from 'redux/contacts/selectors';
 const ContactList = () => {
   const contacts = useSelector(selectVisibleContacts);
   const dispatch = useDispatch();
-  console.log(contacts);
 
   useEffect(() => {
     dispatch(fetchContacts());

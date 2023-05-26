@@ -9,7 +9,7 @@ export const Layout = () => {
     <div
       style={{
         // position: 'fixed',
-        paddingTop: '40px',
+        // paddingTop: '70px',
         height: '100%',
         //   display: 'flex',
         //   maxWidth: 960,

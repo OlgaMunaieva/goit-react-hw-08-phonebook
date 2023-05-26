@@ -1,12 +1,7 @@
 import styled from 'styled-components';
 
 export const ContainerList = styled.ul`
-  /* position: relative; */
   top: 460px;
-  /* max-width: 800px; */
-  /* width: 80%; */
-  /* left: 6%; */
-  /* right: 6%; */
   padding: 0;
   min-width: 300px;
   display: flex;
@@ -16,7 +11,7 @@ export const ContainerList = styled.ul`
   align-items: flex-start;
   overflow: auto;
   max-height: 400px; /* Максимальная высота блока списка */
-  padding-right: 10px; /* Добавляем небольшой отступ справа для полосы прокрутки */
+  padding-right: 10px; /* Отступ справа для полосы прокрутки */
   ::-webkit-scrollbar {
     width: 8px; /* Ширина полосы прокрутки */
   }

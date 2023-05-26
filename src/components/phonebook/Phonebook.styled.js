@@ -1,3 +1,4 @@
+import { colors } from 'settings/variables';
 import styled, { keyframes } from 'styled-components';
 
 const wiggleAnimation = keyframes`
@@ -42,6 +43,6 @@ export const ContainerSettings = styled.div`
 export const Title = styled.h1`
   writing-mode: vertical-lr; /* Вертикальное направление слева направо */
   text-orientation: upright; /* Поворот текста в вертикальном направлении */
-  color: red;
+  color: ${colors.success};
   animation: ${wiggleAnimation} 1s ease-in-out 5;
 `;

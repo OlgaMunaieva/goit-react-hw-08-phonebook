@@ -14,9 +14,6 @@ const ContactForm = () => {
   const handleOnSubmit = event => {
     event.preventDefault();
     const form = event.currentTarget;
-    // const {
-    //   elements: { name, number },
-    // } = form;
     const isExist = contacts.find(
       contact =>
         contact.name.toLowerCase() === form.elements.name.value.toLowerCase()

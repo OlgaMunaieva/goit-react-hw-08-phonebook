@@ -1,3 +1,5 @@
+import { colors } from 'settings/variables';
+
 const styles = {
   container: {
     minHeight: 'calc(100vh - 50px)',
@@ -10,6 +12,7 @@ const styles = {
     fontWeight: 500,
     fontSize: 48,
     textAlign: 'center',
+    color: `${colors.success}`,
   },
 };
 
