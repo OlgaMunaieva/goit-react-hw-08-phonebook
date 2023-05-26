@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-08-phonebook/static/css/main.c51af626.css",
+    "main.css": "/goit-react-hw-08-phonebook/static/css/main.e2f2b290.css",
     "main.js": "/goit-react-hw-08-phonebook/static/js/main.a52e5d6c.js",
     "static/js/983.cda181b9.chunk.js": "/goit-react-hw-08-phonebook/static/js/983.cda181b9.chunk.js",
     "static/js/602.657f462d.chunk.js": "/goit-react-hw-08-phonebook/static/js/602.657f462d.chunk.js",
@@ -8,9 +8,9 @@
     "static/js/237.72be4ff5.chunk.js": "/goit-react-hw-08-phonebook/static/js/237.72be4ff5.chunk.js",
     "static/js/270.b46117f4.chunk.js": "/goit-react-hw-08-phonebook/static/js/270.b46117f4.chunk.js",
     "static/js/981.02da6d46.chunk.js": "/goit-react-hw-08-phonebook/static/js/981.02da6d46.chunk.js",
-    "static/media/top-view-of-book-and-flowers.jpg": "/goit-react-hw-08-phonebook/static/media/top-view-of-book-and-flowers.541dfaab3a875126b5d8.jpg",
+    "static/media/vintage-pink-telephone-assortment.jpg": "/goit-react-hw-08-phonebook/static/media/vintage-pink-telephone-assortment.a7cb209455a51175193e.jpg",
     "index.html": "/goit-react-hw-08-phonebook/index.html",
-    "main.c51af626.css.map": "/goit-react-hw-08-phonebook/static/css/main.c51af626.css.map",
+    "main.e2f2b290.css.map": "/goit-react-hw-08-phonebook/static/css/main.e2f2b290.css.map",
     "main.a52e5d6c.js.map": "/goit-react-hw-08-phonebook/static/js/main.a52e5d6c.js.map",
     "983.cda181b9.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/983.cda181b9.chunk.js.map",
     "602.657f462d.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/602.657f462d.chunk.js.map",
@@ -20,7 +20,7 @@
     "981.02da6d46.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/981.02da6d46.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c51af626.css",
+    "static/css/main.e2f2b290.css",
     "static/js/main.a52e5d6c.js"
   ]
 }
