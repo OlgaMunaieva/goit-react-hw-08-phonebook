@@ -30,7 +30,7 @@ export const Title = styled.h1`
   display: none;
   ${css`
     @media screen and (min-width: 767px) {
-      display: block;
+      display: inline-block;
       writing-mode: vertical-lr; /* Вертикальное направление слева направо */
       text-orientation: upright; /* Поворот текста в вертикальном направлении */
       color: ${colors.success};

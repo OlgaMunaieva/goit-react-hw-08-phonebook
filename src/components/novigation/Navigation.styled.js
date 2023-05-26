@@ -4,7 +4,7 @@ import { styled } from 'styled-components';
 
 export const Nav = styled.nav`
   display: flex;
-  gap: 20px;
+  gap: 10px;
   & a {
     text-decoration-line: none;
   }
@@ -35,5 +35,6 @@ export const NavPages = styled(NavLink)`
   }
   span {
     display: inline-block;
+    font-size: 20px;
   }
 `;
