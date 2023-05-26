@@ -1,5 +1,6 @@
 import { colors } from 'settings/variables';
-import styled, { css, keyframes } from 'styled-components';
+import styled, { css } from 'styled-components';
+import { keyframes } from 'styled-components';
 
 const wiggleAnimation = keyframes`
   0% {
@@ -28,13 +29,13 @@ export const ContainerSettings = styled.div`
 `;
 export const Title = styled.h1`
   display: none;
+  writing-mode: vertical-lr; /* Вертикальное направление слева направо */
+  text-orientation: upright; /* Поворот текста в вертикальном направлении */
+  color: ${colors.success};
+  animation: ${wiggleAnimation} 1s ease -in -out 5;
   ${css`
     @media screen and (min-width: 767px) {
-      display: inline-block;
-      writing-mode: vertical-lr; /* Вертикальное направление слева направо */
-      text-orientation: upright; /* Поворот текста в вертикальном направлении */
-      color: ${colors.success};
-      animation: ${wiggleAnimation} 1s ease -in -out 5;
+      display: block;
     }
   `}
 `;
