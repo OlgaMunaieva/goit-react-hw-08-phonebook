@@ -9,13 +9,11 @@ export const Phonebook = () => {
       <ContainerSettings>
         <div>
           <ContactForm />
-          {/* <h2>Filter</h2> */}
           <Filter />
         </div>
         <div>
           <Title>Phonebook</Title>
         </div>
-
         <ContactList />
       </ContainerSettings>
     </>
