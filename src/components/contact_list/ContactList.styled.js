@@ -10,7 +10,7 @@ export const ContainerList = styled.ul`
   justify-content: start;
   align-items: flex-start;
   overflow: auto;
-  max-height: 400px; /* Максимальная высота блока списка */
+  max-height: 320px; /* Максимальная высота блока списка */
   padding-right: 10px; /* Отступ справа для полосы прокрутки */
   ::-webkit-scrollbar {
     width: 8px; /* Ширина полосы прокрутки */
